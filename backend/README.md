@@ -3,19 +3,32 @@
 # 🌍 EcoSphere ESG Management Platform
 ### 🌱 Backend - Environmental Sustainability Module
 
-<img src="https://img.shields.io/badge/Spring_Boot-3.5-success?style=for-the-badge&logo=springboot">
-<img src="https://img.shields.io/badge/Java-21-orange?style=for-the-badge&logo=openjdk">
-<img src="https://img.shields.io/badge/MySQL-8-blue?style=for-the-badge&logo=mysql">
-<img src="https://img.shields.io/badge/Maven-Build-red?style=for-the-badge&logo=apachemaven">
-<img src="https://img.shields.io/badge/REST_API-Working-success?style=for-the-badge">
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.5-success?style=for-the-badge&logo=springboot)
+![Java](https://img.shields.io/badge/Java-21-orange?style=for-the-badge&logo=openjdk)
+![MySQL](https://img.shields.io/badge/MySQL-8-blue?style=for-the-badge&logo=mysql)
+![Maven](https://img.shields.io/badge/Maven-Build-red?style=for-the-badge&logo=apachemaven)
+![REST API](https://img.shields.io/badge/REST_API-Working-success?style=for-the-badge)
 
-**An intelligent ESG (Environmental, Social & Governance) backend built using Spring Boot to monitor carbon emissions, calculate sustainability metrics, and provide real-time environmental insights.**
+### 🚀 Intelligent ESG Backend for Sustainable Enterprise Management
 
 ---
 
-👩‍💻 **Contributor:** Vidhi Nema
+### 👩‍💻 Contributor
+
+**Vidhi Nema**
+
+🎓 B.Tech Information Technology  
+Jabalpur Engineering College
+
+📧 **Email:** vidh312@gmail.com
+
+🐙 **GitHub:** https://github.com/Vidhi03826
 
 🌿 **Branch:** `feature/environment-module`
+
+---
+
+*"Building scalable backend solutions for a greener and more sustainable future."* 🌱
 
 </div>
 
@@ -23,41 +36,33 @@
 
 # 📖 Overview
 
-The Environmental Module acts as the backend engine for the EcoSphere ESG Management Platform.
+EcoSphere ESG Management Platform is a Spring Boot based backend developed during a Hackathon to help organizations monitor, analyze and improve their Environmental, Social and Governance (ESG) performance.
 
-It provides REST APIs for:
-
-- Carbon Emission Monitoring
-- ESG Score Tracking
-- Sustainability Dashboard
-- Environmental Statistics
-- AI-inspired Sustainability Recommendations
-
-Designed during a Hackathon using **Spring Boot**, **Java**, **MySQL**, and **REST APIs**.
+This backend currently focuses on the **Environmental Module**, providing REST APIs for carbon emission management, sustainability dashboards and ESG analytics.
 
 ---
 
-# 🚀 Features Implemented
+# ✨ Features
 
-## ✅ Phase 1 - Backend Foundation
+## ✅ Phase 1 – Backend Foundation
 
-- Spring Boot Project Setup
+- Spring Boot 3 Setup
 - Maven Configuration
-- Java 21 Configuration
-- MySQL Integration
-- Hibernate/JPA Configuration
+- Java 21
 - REST API Architecture
-- Backend Documentation
-- GitHub Version Control
+- MySQL Configuration
+- Hibernate & JPA Configuration
+- Git Version Control
+- Professional Documentation
 
 ---
 
-## ✅ Phase 2 - Environmental Module APIs
+## ✅ Phase 2 – Environmental Module
 
-### 🌱 Carbon Management
+### 🌱 Carbon Emission Management
 
-- Add Carbon Emission Record
-- View Carbon Emission Records
+- Add Carbon Record
+- View Carbon Records
 - Carbon Monitoring API
 
 ---
@@ -66,7 +71,7 @@ Designed during a Hackathon using **Spring Boot**, **Java**, **MySQL**, and **RE
 
 Provides
 
-- Total Emission
+- Total Carbon Emission
 - Monthly Emission
 - ESG Score
 - Trees Required
@@ -81,19 +86,19 @@ Returns
 - ESG Score
 - ESG Grade
 - Sustainability Status
-- Recommendation
+- Sustainability Recommendation
 
 ---
 
 ### 🤖 Sustainability Recommendation API
 
-Provides intelligent recommendations such as
+Provides recommendations like
 
 - Switch to LED Lighting
 - Reduce Paper Usage
-- Solar Energy Adoption
-- Route Optimization
-- Tree Plantation
+- Increase Solar Energy Adoption
+- Optimize Transportation Routes
+- Increase Tree Plantation
 
 ---
 
@@ -108,6 +113,27 @@ Returns
 
 ---
 
+# 🏗 Backend Architecture
+
+```
+                Frontend
+                    │
+                    ▼
+        Spring Boot REST APIs
+                    │
+        ┌───────────┼───────────┐
+        ▼           ▼           ▼
+ Carbon API   Dashboard API   ESG API
+                    │
+                    ▼
+             Business Logic
+                    │
+                    ▼
+                 MySQL
+```
+
+---
+
 # 🛠 Tech Stack
 
 | Technology | Version |
@@ -115,10 +141,10 @@ Returns
 | Java | 21 |
 | Spring Boot | 3.5 |
 | Maven | Latest |
-| Spring Web | ✔ |
-| Spring Data JPA | ✔ |
+| Spring Web | ✅ |
+| Spring Data JPA | ✅ |
+| Hibernate | ✅ |
 | MySQL | 8 |
-| Hibernate | ✔ |
 | IntelliJ IDEA | Community |
 | Postman | API Testing |
 
@@ -131,40 +157,40 @@ backend
 │
 ├── src
 │   ├── main
-│   │   ├── java
-│   │   │
-│   │   │── com.nexora.backend
-│   │   │     │
-│   │   │     ├── controller
-│   │   │     │      ├── CarbonController
-│   │   │     │      ├── DashboardController
-│   │   │     │      ├── ESGController
-│   │   │     │      ├── RecommendationController
-│   │   │     │      └── StatisticsController
-│   │   │     │
-│   │   │     ├── entity
-│   │   │     │      └── Department
-│   │   │     │
-│   │   │     ├── repository
-│   │   │     │      └── DepartmentRepository
-│   │   │     │
-│   │   │     └── BackendApplication
-│   │   │
-│   │   └── resources
-│   │          └── application.properties
 │   │
-│   └── test
+│   ├── java
+│   │
+│   │   └── com.nexora.backend
+│   │        │
+│   │        ├── controller
+│   │        │      ├── CarbonController
+│   │        │      ├── DashboardController
+│   │        │      ├── ESGController
+│   │        │      ├── RecommendationController
+│   │        │      └── StatisticsController
+│   │        │
+│   │        ├── entity
+│   │        │      └── Department
+│   │        │
+│   │        ├── repository
+│   │        │      └── DepartmentRepository
+│   │        │
+│   │        └── BackendApplication
+│   │
+│   └── resources
+│          └── application.properties
 │
 ├── pom.xml
 ├── mvnw
+├── mvnw.cmd
 └── README.md
 ```
 
 ---
 
-# ⚙️ Installation Guide
+# ⚙ Installation
 
-## 1️⃣ Clone Repository
+## Clone Repository
 
 ```bash
 git clone https://github.com/mradanshi/EcoSphere_ESG_Management_Platform-Team_Nexora.git
@@ -172,7 +198,7 @@ git clone https://github.com/mradanshi/EcoSphere_ESG_Management_Platform-Team_Ne
 
 ---
 
-## 2️⃣ Switch Branch
+## Checkout Branch
 
 ```bash
 git checkout feature/environment-module
@@ -180,7 +206,7 @@ git checkout feature/environment-module
 
 ---
 
-## 3️⃣ Go to Backend
+## Move to Backend
 
 ```bash
 cd backend
@@ -188,13 +214,15 @@ cd backend
 
 ---
 
-## 4️⃣ Configure Database
-
-Create database
+## Create Database
 
 ```sql
 CREATE DATABASE ecosphere;
 ```
+
+---
+
+## Configure Database
 
 Update
 
@@ -202,14 +230,15 @@ Update
 src/main/resources/application.properties
 ```
 
-```
+```properties
+spring.datasource.url=jdbc:mysql://localhost:3306/ecosphere
 spring.datasource.username=root
 spring.datasource.password=root123
 ```
 
 ---
 
-## 5️⃣ Run Application
+## Run Application
 
 ### Windows
 
@@ -239,9 +268,7 @@ http://localhost:8080
 
 # 📡 REST APIs
 
----
-
-## ❤️ Health Check
+## ❤️ Health API
 
 ### GET
 
@@ -249,7 +276,7 @@ http://localhost:8080
 /api/health
 ```
 
-Response
+Returns
 
 ```
 EcoSphere Backend Running Successfully
@@ -259,9 +286,7 @@ EcoSphere Backend Running Successfully
 
 ## 🌱 Carbon API
 
-### Add Carbon Record
-
-POST
+### POST
 
 ```
 /api/carbon
@@ -280,19 +305,19 @@ Sample Request
 
 ---
 
-### View Carbon Records
-
-GET
+### GET
 
 ```
 /api/carbon
 ```
 
+Returns all carbon records.
+
 ---
 
 ## 📊 Dashboard API
 
-GET
+### GET
 
 ```
 /api/dashboard
@@ -300,53 +325,55 @@ GET
 
 Returns
 
-```json
-{
-  "totalEmission":550,
-  "monthlyEmission":125,
-  "esgScore":82,
-  "treesRequired":28,
-  "status":"GOOD"
-}
-```
+- Total Emission
+- Monthly Emission
+- ESG Score
+- Trees Required
+- Sustainability Status
 
 ---
 
 ## 🌍 ESG Score API
 
-GET
+### GET
 
 ```
 /api/esg-score
 ```
 
+Returns ESG score and sustainability grade.
+
 ---
 
 ## 🤖 Recommendation API
 
-GET
+### GET
 
 ```
 /api/recommendations
 ```
 
+Returns AI-inspired sustainability recommendations.
+
 ---
 
 ## 📈 Statistics API
 
-GET
+### GET
 
 ```
 /api/statistics
 ```
 
+Returns platform statistics.
+
 ---
 
 # 🧪 API Testing
 
-Use **Postman** for testing all APIs.
+The APIs can be tested using **Postman**.
 
-Server URL
+Base URL
 
 ```
 http://localhost:8080
@@ -354,32 +381,33 @@ http://localhost:8080
 
 ---
 
-# 🎯 Current Module Status
+# 📌 Current Status
 
-| Feature | Status |
+| Module | Status |
 |---------|--------|
 | Spring Boot Setup | ✅ |
-| MySQL Configuration | ✅ |
 | REST APIs | ✅ |
-| Carbon API | ✅ |
+| MySQL Configuration | ✅ |
+| Carbon Module | ✅ |
 | Dashboard API | ✅ |
 | ESG Score API | ✅ |
 | Recommendation API | ✅ |
 | Statistics API | ✅ |
-| Repository Layer | ✅ |
 | Entity Layer | ✅ |
+| Repository Layer | ✅ |
 | Documentation | ✅ |
 
 ---
 
-# 🚀 Future Enhancements
+# 🚀 Future Scope
 
-- Authentication & Authorization
+- User Authentication
 - JWT Security
-- Live Database CRUD
-- Dynamic ESG Score Calculation
-- Carbon Prediction using AI
-- Report Generation (PDF/Excel)
+- Database CRUD Operations
+- Live ESG Score Calculation
+- AI-based Carbon Prediction
+- PDF Report Generation
+- Excel Export
 - Docker Deployment
 - Cloud Deployment
 - Swagger Documentation
@@ -388,26 +416,24 @@ http://localhost:8080
 
 # 🌟 Highlights
 
-✔ Modular Spring Boot Architecture
-
-✔ RESTful API Design
-
-✔ MySQL Integration Ready
-
-✔ Scalable Backend Structure
-
-✔ Clean Project Organization
-
-✔ Hackathon MVP Ready
-
-✔ Easy Frontend Integration
+- Clean Spring Boot Architecture
+- RESTful API Design
+- Modular Code Structure
+- MySQL Integration Ready
+- Frontend Integration Ready
+- Hackathon MVP
+- Easily Scalable
 
 ---
 
 <div align="center">
 
-## 🌱 Building Smarter & Greener Enterprises through ESG Technology.
+## 🌱 EcoSphere ESG Management Platform
 
-**Made with ❤️ by Team Nexora**
+**Developed with ❤️ by Team Nexora**
+
+Backend Module by **Vidhi Nema**
+
+⭐ If you found this project useful, consider giving it a star.
 
 </div>
