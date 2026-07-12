@@ -9,17 +9,17 @@ import java.util.*;
 public class DashboardController {
 
     @GetMapping("/dashboard")
-    public Map<String,Object> dashboard(){
+    public Map<String, Object> dashboard() {
 
-        Map<String,Object> dashboard=new HashMap<>();
+        Map<String, Object> data = new HashMap<>();
 
-        dashboard.put("totalEmission",550);
-        dashboard.put("monthlyEmission",125);
-        dashboard.put("esgScore",82);
-        dashboard.put("treesRequired",28);
-        dashboard.put("status","GOOD");
+        data.put("totalEmission", 550);
+        data.put("monthlyEmission", 125);
+        data.put("esgScore", 82);
+        data.put("treesRequired", 28);
+        data.put("status", "GOOD");
+        data.put("lastUpdated", new Date());
 
-        return dashboard;
+        return data;
     }
-
 }

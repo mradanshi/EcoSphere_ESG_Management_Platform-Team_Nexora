@@ -9,22 +9,14 @@ import java.util.*;
 public class RecommendationController {
 
     @GetMapping("/recommendations")
-    public List<String> recommendations(){
+    public List<String> recommendations() {
 
         return Arrays.asList(
-
                 "Switch to LED Lighting",
-
                 "Reduce Paper Usage",
-
                 "Increase Solar Energy Adoption",
-
                 "Optimize Transportation Routes",
-
-                "Plant More Trees"
-
+                "Increase Tree Plantation"
         );
-
     }
-
 }

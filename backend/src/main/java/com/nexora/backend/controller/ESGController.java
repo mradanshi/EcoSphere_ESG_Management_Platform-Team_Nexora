@@ -9,15 +9,15 @@ import java.util.*;
 public class ESGController {
 
     @GetMapping("/esg-score")
-    public Map<String,Object> score(){
+    public Map<String, Object> score() {
 
-        Map<String,Object> score=new HashMap<>();
+        Map<String, Object> response = new HashMap<>();
 
-        score.put("score",82);
-        score.put("grade","A");
-        score.put("status","Excellent");
+        response.put("score", 82);
+        response.put("grade", "A");
+        response.put("status", "Excellent");
+        response.put("recommendation", "Maintain current sustainability practices");
 
-        return score;
+        return response;
     }
-
 }

@@ -9,17 +9,15 @@ import java.util.*;
 public class StatisticsController {
 
     @GetMapping("/statistics")
-    public Map<String,Object> statistics(){
+    public Map<String, Object> statistics() {
 
-        Map<String,Object> stats=new HashMap<>();
+        Map<String, Object> stats = new HashMap<>();
 
-        stats.put("employees",450);
-        stats.put("departments",8);
-        stats.put("reportsGenerated",152);
-        stats.put("carbonSaved","1.8 Tons");
+        stats.put("employees", 450);
+        stats.put("departments", 8);
+        stats.put("reportsGenerated", 152);
+        stats.put("carbonSaved", "1.8 Tons");
 
         return stats;
-
     }
-
 }
