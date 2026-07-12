@@ -12,13 +12,19 @@ public class CarbonController {
     private List<Map<String, Object>> records = new ArrayList<>();
 
     @PostMapping("/carbon")
-    public String addCarbon(@RequestBody Map<String, Object> body) {
+
+    public Map<String, Object> addCarbon(@RequestBody Map<String, Object> body) {
 
         records.add(body);
 
-        return "Carbon Record Added Successfully";
-    }
+        Map<String, Object> response = new HashMap<>();
 
+        response.put("message", "Carbon Record Added Successfully");
+        response.put("status", "success");
+        response.put("timestamp", new Date());
+
+        return response;
+    }
     @GetMapping("/carbon")
     public List<Map<String, Object>> getAllCarbon() {
         return records;
