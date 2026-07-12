@@ -1,40 +1,126 @@
-# 🌱 EcoSphere ESG Management Platform - Backend
+<div align="center">
 
-> Spring Boot backend for the Environmental module of the EcoSphere ESG Management Platform.
+# 🌍 EcoSphere ESG Management Platform
+### 🌱 Backend - Environmental Sustainability Module
 
----
+<img src="https://img.shields.io/badge/Spring_Boot-3.5-success?style=for-the-badge&logo=springboot">
+<img src="https://img.shields.io/badge/Java-21-orange?style=for-the-badge&logo=openjdk">
+<img src="https://img.shields.io/badge/MySQL-8-blue?style=for-the-badge&logo=mysql">
+<img src="https://img.shields.io/badge/Maven-Build-red?style=for-the-badge&logo=apachemaven">
+<img src="https://img.shields.io/badge/REST_API-Working-success?style=for-the-badge">
 
-## 👩‍💻 Contributor
-
-**Vidhi Nema**
-
-Branch: `feature/environment-module`
-
----
-
-## 🚀 Features Implemented
-
-- ✅ Spring Boot Backend Setup
-- ✅ Maven Configuration
-- ✅ MySQL Integration
-- ✅ REST API Structure
-- ✅ Carbon Emission API
-- ✅ Health Check API
-- ✅ Department Entity
-- ✅ Department Repository
-- ✅ JPA Configuration
+**An intelligent ESG (Environmental, Social & Governance) backend built using Spring Boot to monitor carbon emissions, calculate sustainability metrics, and provide real-time environmental insights.**
 
 ---
 
-## 🛠 Tech Stack
+👩‍💻 **Contributor:** Vidhi Nema
 
-- Java 21
-- Spring Boot 3.5
-- Spring Data JPA
-- MySQL
-- Maven
-- IntelliJ IDEA
-- Postman
+🌿 **Branch:** `feature/environment-module`
+
+</div>
+
+---
+
+# 📖 Overview
+
+The Environmental Module acts as the backend engine for the EcoSphere ESG Management Platform.
+
+It provides REST APIs for:
+
+- Carbon Emission Monitoring
+- ESG Score Tracking
+- Sustainability Dashboard
+- Environmental Statistics
+- AI-inspired Sustainability Recommendations
+
+Designed during a Hackathon using **Spring Boot**, **Java**, **MySQL**, and **REST APIs**.
+
+---
+
+# 🚀 Features Implemented
+
+## ✅ Phase 1 - Backend Foundation
+
+- Spring Boot Project Setup
+- Maven Configuration
+- Java 21 Configuration
+- MySQL Integration
+- Hibernate/JPA Configuration
+- REST API Architecture
+- Backend Documentation
+- GitHub Version Control
+
+---
+
+## ✅ Phase 2 - Environmental Module APIs
+
+### 🌱 Carbon Management
+
+- Add Carbon Emission Record
+- View Carbon Emission Records
+- Carbon Monitoring API
+
+---
+
+### 📊 ESG Dashboard
+
+Provides
+
+- Total Emission
+- Monthly Emission
+- ESG Score
+- Trees Required
+- Sustainability Status
+
+---
+
+### 🌍 ESG Score API
+
+Returns
+
+- ESG Score
+- ESG Grade
+- Sustainability Status
+- Recommendation
+
+---
+
+### 🤖 Sustainability Recommendation API
+
+Provides intelligent recommendations such as
+
+- Switch to LED Lighting
+- Reduce Paper Usage
+- Solar Energy Adoption
+- Route Optimization
+- Tree Plantation
+
+---
+
+### 📈 Statistics API
+
+Returns
+
+- Total Employees
+- Departments
+- Reports Generated
+- Carbon Saved
+
+---
+
+# 🛠 Tech Stack
+
+| Technology | Version |
+|------------|----------|
+| Java | 21 |
+| Spring Boot | 3.5 |
+| Maven | Latest |
+| Spring Web | ✔ |
+| Spring Data JPA | ✔ |
+| MySQL | 8 |
+| Hibernate | ✔ |
+| IntelliJ IDEA | Community |
+| Postman | API Testing |
 
 ---
 
@@ -46,94 +132,104 @@ backend
 ├── src
 │   ├── main
 │   │   ├── java
-│   │   │   └── com.nexora.backend
-│   │   │       ├── controller
-│   │   │       ├── entity
-│   │   │       ├── repository
-│   │   │       └── BackendApplication.java
+│   │   │
+│   │   │── com.nexora.backend
+│   │   │     │
+│   │   │     ├── controller
+│   │   │     │      ├── CarbonController
+│   │   │     │      ├── DashboardController
+│   │   │     │      ├── ESGController
+│   │   │     │      ├── RecommendationController
+│   │   │     │      └── StatisticsController
+│   │   │     │
+│   │   │     ├── entity
+│   │   │     │      └── Department
+│   │   │     │
+│   │   │     ├── repository
+│   │   │     │      └── DepartmentRepository
+│   │   │     │
+│   │   │     └── BackendApplication
 │   │   │
 │   │   └── resources
-│   │       └── application.properties
+│   │          └── application.properties
 │   │
 │   └── test
 │
 ├── pom.xml
+├── mvnw
 └── README.md
 ```
 
 ---
 
-# ⚙ Prerequisites
+# ⚙️ Installation Guide
 
-Before running the project, make sure you have:
+## 1️⃣ Clone Repository
 
-- Java 21
-- Maven
-- MySQL 8+
-- IntelliJ IDEA / VS Code
-- Postman (optional)
+```bash
+git clone https://github.com/mradanshi/EcoSphere_ESG_Management_Platform-Team_Nexora.git
+```
 
 ---
 
-# 🗄 Database Configuration
+## 2️⃣ Switch Branch
 
-Create a MySQL database
+```bash
+git checkout feature/environment-module
+```
+
+---
+
+## 3️⃣ Go to Backend
+
+```bash
+cd backend
+```
+
+---
+
+## 4️⃣ Configure Database
+
+Create database
 
 ```sql
 CREATE DATABASE ecosphere;
 ```
 
-Update the database credentials in
+Update
 
 ```
 src/main/resources/application.properties
 ```
 
-```properties
-spring.datasource.url=jdbc:mysql://localhost:3306/ecosphere
+```
 spring.datasource.username=root
 spring.datasource.password=root123
 ```
 
 ---
 
-# ▶️ Running the Project
+## 5️⃣ Run Application
 
-### Clone Repository
-
-```bash
-git clone https://github.com/mradanshi/EcoSphere_ESG_Management_Platform-Team_Nexora.git
-```
-
-### Go to Backend
-
-```bash
-cd EcoSphere_ESG_Management_Platform-Team_Nexora/backend
-```
-
-### Run using Maven Wrapper
-
-Windows
+### Windows
 
 ```bash
 mvnw.cmd spring-boot:run
 ```
 
-Linux / Mac
+### OR
 
-```bash
-./mvnw spring-boot:run
+Run
+
+```
+BackendApplication.java
 ```
 
-OR
-
-Run `BackendApplication.java` directly from IntelliJ.
+directly from IntelliJ IDEA.
 
 ---
 
 # 🌐 Server
-
-Backend runs on
 
 ```
 http://localhost:8080
@@ -141,14 +237,16 @@ http://localhost:8080
 
 ---
 
-# 📡 Available APIs
+# 📡 REST APIs
 
-## Health Check
+---
+
+## ❤️ Health Check
 
 ### GET
 
 ```
-http://localhost:8080/api/health
+/api/health
 ```
 
 Response
@@ -159,82 +257,157 @@ EcoSphere Backend Running Successfully
 
 ---
 
-## Get Carbon Records
+## 🌱 Carbon API
 
-### GET
+### Add Carbon Record
 
-```
-http://localhost:8080/api/carbon
-```
-
----
-
-## Add Carbon Record
-
-### POST
+POST
 
 ```
-http://localhost:8080/api/carbon
+/api/carbon
 ```
 
-Request
+Sample Request
 
 ```json
 {
-    "department":"IT",
-    "activity":"Electricity",
-    "quantity":120,
-    "emission":55
+  "department":"IT",
+  "activity":"Electricity",
+  "quantity":120,
+  "emission":55
 }
 ```
 
-Response
+---
+
+### View Carbon Records
+
+GET
 
 ```
-Carbon Record Added Successfully
+/api/carbon
 ```
 
 ---
 
-# 🧪 Testing
+## 📊 Dashboard API
 
-Use Postman to test all REST APIs.
+GET
+
+```
+/api/dashboard
+```
+
+Returns
+
+```json
+{
+  "totalEmission":550,
+  "monthlyEmission":125,
+  "esgScore":82,
+  "treesRequired":28,
+  "status":"GOOD"
+}
+```
 
 ---
 
-# 🔮 Future Enhancements
+## 🌍 ESG Score API
 
-- Store Carbon Records in MySQL
-- ESG Score Calculation
-- Dashboard Analytics
-- Carbon Footprint Reports
+GET
+
+```
+/api/esg-score
+```
+
+---
+
+## 🤖 Recommendation API
+
+GET
+
+```
+/api/recommendations
+```
+
+---
+
+## 📈 Statistics API
+
+GET
+
+```
+/api/statistics
+```
+
+---
+
+# 🧪 API Testing
+
+Use **Postman** for testing all APIs.
+
+Server URL
+
+```
+http://localhost:8080
+```
+
+---
+
+# 🎯 Current Module Status
+
+| Feature | Status |
+|---------|--------|
+| Spring Boot Setup | ✅ |
+| MySQL Configuration | ✅ |
+| REST APIs | ✅ |
+| Carbon API | ✅ |
+| Dashboard API | ✅ |
+| ESG Score API | ✅ |
+| Recommendation API | ✅ |
+| Statistics API | ✅ |
+| Repository Layer | ✅ |
+| Entity Layer | ✅ |
+| Documentation | ✅ |
+
+---
+
+# 🚀 Future Enhancements
+
 - Authentication & Authorization
-- Frontend Integration
-- AI-based Sustainability Recommendations
+- JWT Security
+- Live Database CRUD
+- Dynamic ESG Score Calculation
+- Carbon Prediction using AI
+- Report Generation (PDF/Excel)
+- Docker Deployment
+- Cloud Deployment
+- Swagger Documentation
 
 ---
 
-# 📌 Status
+# 🌟 Highlights
 
-- ✅ Spring Boot Setup Completed
-- ✅ Backend APIs Working
-- ✅ MySQL Connected
-- 🚧 Additional features under development
+✔ Modular Spring Boot Architecture
 
----
+✔ RESTful API Design
 
-## 📎 Repository
+✔ MySQL Integration Ready
 
-GitHub Repository
+✔ Scalable Backend Structure
 
-https://github.com/mradanshi/EcoSphere_ESG_Management_Platform-Team_Nexora
+✔ Clean Project Organization
 
-Feature Branch
+✔ Hackathon MVP Ready
 
-```
-feature/environment-module
-```
+✔ Easy Frontend Integration
 
 ---
 
-⭐ Developed as part of the **EcoSphere ESG Management Platform** Hackathon Project.
+<div align="center">
+
+## 🌱 Building Smarter & Greener Enterprises through ESG Technology.
+
+**Made with ❤️ by Team Nexora**
+
+</div>
