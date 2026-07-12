@@ -8,9 +8,14 @@ function AIChat() {
   const handleAsk = async () => {
     if (!question) return;
 
-    const response = await askAI(question);
-
-    setAnswer(response);
+    try {
+  const response = await askAI(question);
+  console.log(response);
+  setAnswer(response);
+} catch (err) {
+  console.error(err);
+  alert(err.message);
+}
   };
 
   return (
