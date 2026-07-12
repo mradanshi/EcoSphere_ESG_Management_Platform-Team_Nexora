@@ -20,6 +20,33 @@ http://localhost:8080/api
 |---------|----------|--------|-------|
 | GET | /dashboard | Pending | Member 2 |
 
+### GET /dashboard
+
+**Description**
+
+Returns the ESG summary displayed on the dashboard.
+
+**Request**
+
+No request body.
+
+**Response**
+
+```json
+{
+  "overallESG": 82,
+  "environment": 74,
+  "social": 88,
+  "governance": 84,
+  "departmentRank": 2,
+  "totalEmployees": 150,
+  "activeChallenges": 6
+}
+```
+
+**Status Code**
+
+200 OK
 ---
 
 ## Environmental APIs
